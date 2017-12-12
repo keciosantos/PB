@@ -11,9 +11,6 @@ public class Aluno implements Serializable {
     private String nome;
     private String ano;
     private int semestre;
-    private double participacao;
-    private double presenca;
-    private double comprometimento;
     private Integer idTurma;
 
     public Integer getId() {
@@ -58,29 +55,5 @@ public class Aluno implements Serializable {
 
     public String toString(){
         return id+"-"+nome;
-    }
-
-    public double getParticipacao() {
-        return participacao;
-    }
-
-    public void setParticipacao(double participacao) {
-        this.participacao = participacao;
-    }
-
-    public double getPresenca() {
-        return presenca;
-    }
-
-    public void setPresenca(double presenca) {
-        this.presenca = presenca;
-    }
-
-    public double getComprometimento() {
-        return comprometimento;
-    }
-
-    public void setComprometimento(double comprometimento) {
-        this.comprometimento = comprometimento;
     }
 }

@@ -34,11 +34,8 @@ public class AlunoDAO extends SQLiteOpenHelper {
                 "nome VARCHAR," +
                 "ano DATE, " +
                 "semestre INT, " +
-                "participacao"+
-                "presenca"+
-                "comprometimento"+
                 "idturma INTEGER ," +
-                "FOREIGN KEY(idturma) REFERENCES turma(idturma))";
+                "FOREIGN KEY(idturma) REFERENCES Turma(id))";
         sqLiteDatabase.execSQL(sql);
 
     }
@@ -55,9 +52,6 @@ public class AlunoDAO extends SQLiteOpenHelper {
         values.put("nome",aluno.getNome());
         values.put("ano", String.valueOf(aluno.getAno()));
         values.put("semestre",aluno.getSemestre());
-        values.put("participacao",aluno.getParticipacao());
-        values.put("presenca",aluno.getPresenca());
-        values.put("comprometimento",aluno.getComprometimento());
 
         getWritableDatabase().insert(TABELA,null,values);
 
@@ -72,9 +66,6 @@ public class AlunoDAO extends SQLiteOpenHelper {
             aluno.setNome(String.valueOf(cursor.getColumnIndex("nome")));
             aluno.setAno(String.valueOf(cursor.getColumnIndex("ano")));
             aluno.setSemestre(cursor.getColumnIndex("semestre"));
-            aluno.setParticipacao(cursor.getColumnIndex("participacao"));
-            aluno.setPresenca(cursor.getColumnIndex("presenca"));
-            aluno.setComprometimento(cursor.getColumnIndex("comprometimento"));
             aluno.setIdTurma(cursor.getColumnIndex("idTurma"));
             alunos.add(aluno);
         }
@@ -90,9 +81,6 @@ public class AlunoDAO extends SQLiteOpenHelper {
         values.put("nome",aluno.getNome());
         values.put("ano", String.valueOf(aluno.getAno()));
         values.put("semestre",aluno.getSemestre());
-        values.put("participacao",aluno.getParticipacao());
-        values.put("presenca",aluno.getPresenca());
-        values.put("comprometimento",aluno.getComprometimento());
         String args[] = {""+aluno.getId()};
         getWritableDatabase().update("Alunos", values,"id=?", args);
 

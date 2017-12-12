@@ -6,23 +6,23 @@ import org.json.JSONStringer;
 import java.util.List;
 
 import pbl2.cursoandroid.com.pbl2.modelo.Aluno;
+import pbl2.cursoandroid.com.pbl2.modelo.Avaliacao;
 
 /**
  * Created by keciosantos on 11/12/17.
  */
 
-public class AlunoConverter {
+public class AvaliacaoConerter {
 
-    public String toJSON(List<Aluno> alunos){
+    public String toJSON(List<Avaliacao> avalicoes){
         JSONStringer js = new JSONStringer();
         try{
             js.object().key("list").array();
-            js.object().key("aluno").array();
-            for (Aluno aluno:alunos){
-                js.key("nome").value(aluno.getNome());
-                js.key("ano").value(aluno.getAno());
-                js.key("semestre").value(aluno.getSemestre());
-                js.key("idTurma").value(aluno.getIdTurma());
+            js.object().key("avaliacao").array();
+            for (Avaliacao avaliacao:avalicoes){
+                js.key("nParticipacao").value(avaliacao.getnParticipacao());
+                js.key("nPresenca").value(avaliacao.getnPresenca());
+                js.key("nComprometimento").value(avaliacao.getnComprometimento());
                 js.endObject();
             }
             js.endArray().endObject();
