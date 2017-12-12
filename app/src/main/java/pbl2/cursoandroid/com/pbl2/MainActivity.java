@@ -17,10 +17,12 @@ public class MainActivity extends AppCompatActivity {
         turmas =findViewById(R.id.imgTurmaId);
         alunos = findViewById(R.id.imgAlunosId);
 
+
         alunos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,AlunosActivity.class));
+
             }
         });
 

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import pbl2.cursoandroid.com.pbl2.suporte.WebClient2;
+
 public class AlunosActivity extends AppCompatActivity {
     private ImageView addAluno;
     private ImageView buscarAluno;
@@ -14,6 +16,8 @@ public class AlunosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alunos);
+
+
 
         addAluno = findViewById(R.id.imgAddAlunoId);
         buscarAluno = findViewById(R.id.imgBuscarAlunoId);

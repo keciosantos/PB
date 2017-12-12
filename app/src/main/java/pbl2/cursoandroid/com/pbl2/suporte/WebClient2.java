@@ -17,7 +17,7 @@ import org.json.JSONObject;
  * Created by keciosantos on 12/12/17.
  */
 
-public class WebClient2 { String baseUrl = "http://raelpx.pythonanywhere.com";
+public class WebClient2 { String baseUrl = "http://raelpx.pythonanywhere.com/api/";
     String url;
     RequestQueue requestQueue;
 
@@ -25,8 +25,8 @@ public class WebClient2 { String baseUrl = "http://raelpx.pythonanywhere.com";
         requestQueue = Volley.newRequestQueue(context);
     }
 
-    public void teste (){
-        url = baseUrl + "/api/alunos";
+    public void listarAluno (){
+        url = baseUrl + "alunos";
 
         JsonArrayRequest arrayRequest = new JsonArrayRequest(Request.Method.GET, url,
                 new Response.Listener<JSONArray>() {
@@ -37,8 +37,7 @@ public class WebClient2 { String baseUrl = "http://raelpx.pythonanywhere.com";
                             for (int i = 0; i < response.length(); i++) {
                                 try {
                                     JSONObject jsonObject = response.getJSONObject(i);
-                                    System.out.println(jsonObject.get("nome"));
-                                    System.out.println(jsonObject.get("semestre"));
+
                                 } catch (JSONException e) {
                                     System.out.println(e);
                                 }
