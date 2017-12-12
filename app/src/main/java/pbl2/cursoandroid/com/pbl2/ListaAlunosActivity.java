@@ -7,6 +7,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import pbl2.cursoandroid.com.pbl2.modelo.Aluno;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ListaAlunosActivity extends Activity {
     protected ListView lista;
@@ -16,6 +21,8 @@ public class ListaAlunosActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_alunos);
+
+
 
         lista = findViewById(R.id.listaId);
         registerForContextMenu(lista);

@@ -24,7 +24,14 @@
         <activity android:name=".Formulario" />
         <activity android:name=".AlunosActivity" />
         <activity android:name=".TurmaActivity" />
-        <activity android:name=".ListaAlunosActivity"></activity>
+        <activity android:name=".ListaAlunosActivity" />
+        <activity android:name=".SessaoActivity" />
+        <activity android:name=".AvaliacaoActivity" />
+        <activity android:name=".ListaTurmaActivity" />
+        <activity android:name=".ListaSessaoActivity" />
+        <activity android:name=".FormularioTurma" />
+        <activity android:name=".FormularioSessao" />
+        <activity android:name=".FormularioAvalicao"></activity>
     </application>
 
 </manifest>

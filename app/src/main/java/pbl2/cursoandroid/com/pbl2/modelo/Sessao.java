@@ -10,7 +10,7 @@ public class Sessao implements Serializable {
 
     private long id;
     private long idAvaliacao;
-    private  String nomeTutor;
+    private int nomeTutor;
 
     public long getId() {
         return id;
@@ -28,7 +28,7 @@ public class Sessao implements Serializable {
         this.idAvaliacao = idAvaliacao;
     }
 
-    public String getNomeTutor() {
+    public int getNomeTutor() {
         return nomeTutor;
     }
 

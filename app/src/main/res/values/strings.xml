@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">PBL2</string>
     <string name="cadastro_de_alunos">Cadastro de Alunos</string>
+    <string name="avaliacao_de_alunos">Avaliação do Alunos</string>
     <string name="nome">Nome:</string>
     <string name="ano">Ano:</string>
     <string name="semestre">Semestre:</string>
@@ -18,4 +19,23 @@
     <string name="Addalunos">Adicionar alunos</string>
     <string name="lupa">TODO</string>
     <string name="consulta">Buscar Aluno</string>
+    <string name="AddSessao">Adicionar Sessao</string>
+    <string name="consultar_sessao">Buscar Sessão</string>
+    <string name="addTurma">Adicionar Turma</string>
+    <string name="buscarTurma">Buscar Turma</string>
+    <string name="lSessoes">Sessões Cadastradas</string>
+    <string name="listaTurma">Turmas Cadastradas</string>
+    <string name="cadastroSessao">Cadastro de Sessões</string>
+    <string name="cadastroTurmas">CadastroTurmas</string>
+    <string name="cadastrarTurma">Cadastrar Turma</string>
+    <string name="cadastroAvaliação">Cadatro de Notas</string>
+    <string name="nomeAluno" />
+    <string name="nomeSessao">Nome do Tutor:</string>
+    <string name="idAvaliacao">ID Avaliação:</string>
+    <string name="nomeTurma">Nome da Turma:</string>
+    <string name="idSessao">ID Sessão:</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo">TODO</string>
 </resources>

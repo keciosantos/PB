@@ -16,7 +16,7 @@ public class AlunosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_alunos);
 
         addAluno = findViewById(R.id.imgAddAlunoId);
-        buscarAluno = findViewById(R.id.imgBuscarAluno);
+        buscarAluno = findViewById(R.id.imgBuscarAlunoId);
         addAluno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

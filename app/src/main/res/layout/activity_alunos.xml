@@ -23,23 +23,23 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imgAddAlunoId"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
+        android:layout_alignTop="@+id/imgAddAlunoId"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
         android:layout_toEndOf="@+id/imgAddAlunoId"
         android:layout_toRightOf="@+id/imgAddAlunoId"
         android:text="@string/Addalunos"
         android:textSize="18sp" />
 
     <ImageView
-        android:id="@+id/imgBuscarAluno"
+        android:id="@+id/imgBuscarAlunoId"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignLeft="@+id/imgAddAlunoId"
         android:layout_alignStart="@+id/imgAddAlunoId"
-        android:layout_below="@+id/imgAddAlunoId"
-        android:layout_marginTop="27dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="39dp"
         android:contentDescription="@string/lupa"
         app:srcCompat="@android:drawable/ic_menu_search" />
 
@@ -47,10 +47,10 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgBuscarAlunoId"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignStart="@+id/textView2"
-        android:layout_alignTop="@+id/imgBuscarAluno"
-        android:layout_marginTop="15dp"
+        android:layout_marginBottom="12dp"
         android:text="@string/consulta"
         android:textSize="18sp" />
 </RelativeLayout>

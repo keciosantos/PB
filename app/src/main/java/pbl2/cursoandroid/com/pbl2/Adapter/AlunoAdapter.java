@@ -1,4 +1,4 @@
-package pbl2.cursoandroid.com.pbl2;
+package pbl2.cursoandroid.com.pbl2.Adapter;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import pbl2.cursoandroid.com.pbl2.R;
 import pbl2.cursoandroid.com.pbl2.modelo.Aluno;
 
 /**

@@ -33,9 +33,9 @@ public class FormularioHelper {
         aluno.setNome(campoNome.getText().toString());
         aluno.setAno(campoAno.getText().toString());
         aluno.setSemestre(Integer.parseInt(campoSemestre.getText().toString()));
-        aluno.setParticipacao(Double.valueOf(campoParticipacao.getRating()));
-        aluno.setPresenca(Double.valueOf(campoPresenca.getRating()));
-        aluno.setComprometimento(Double.valueOf(campoComprometimento.getRating()));
+        //aluno.setParticipacao(Double.valueOf(campoParticipacao.getRating()));
+        //aluno.setPresenca(Double.valueOf(campoPresenca.getRating()));
+        //aluno.setComprometimento(Double.valueOf(campoComprometimento.getRating()));
         return aluno;
     }
     public void colocarAlunoNoFormulario(Aluno alunoParaSerAlterado){
@@ -43,9 +43,9 @@ public class FormularioHelper {
         campoNome.setText(alunoParaSerAlterado.getNome());
         campoAno.setText(alunoParaSerAlterado.getAno());
         campoSemestre.setText(alunoParaSerAlterado.getSemestre());
-        campoParticipacao.setRating((float) alunoParaSerAlterado.getParticipacao());
-        campoPresenca.setRating((float) alunoParaSerAlterado.getPresenca());
-        campoComprometimento.setRating((float) alunoParaSerAlterado.getComprometimento());
+        //campoParticipacao.setRating((float) alunoParaSerAlterado.getParticipacao());
+        //campoPresenca.setRating((float) alunoParaSerAlterado.getPresenca());
+        //campoComprometimento.setRating((float) alunoParaSerAlterado.getComprometimento());
 
     }
 

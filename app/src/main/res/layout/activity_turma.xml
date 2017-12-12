@@ -4,6 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pbl2.cursoandroid.com.pbl2.TurmaActivity">
+    tools:context="pbl2.cursoandroid.com.pbl2.TurmaActivity"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/imgAddSessaoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginTop="33dp"
+        android:layout_toLeftOf="@+id/txtBuscarSessao"
+        android:layout_toStartOf="@+id/txtBuscarSessao"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/ic_menu_add" />
+
+
+    <ImageView
+        android:id="@+id/imgaddTurma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgAddSessaoId"
+        android:layout_alignStart="@+id/imgAddSessaoId"
+        android:layout_alignTop="@+id/imgAddSessaoId"
+        android:layout_marginTop="38dp"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/ic_menu_add" />
+
+    <ImageView
+        android:id="@+id/imgBuscaTurmaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgaddTurma"
+        android:layout_alignStart="@+id/imgaddTurma"
+        android:layout_below="@+id/imgaddTurma"
+        android:layout_marginTop="45dp"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/ic_menu_search" />
+
+    <ImageView
+        android:id="@+id/imgBuscarSessao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgBuscaTurmaId"
+        android:layout_alignStart="@+id/imgBuscaTurmaId"
+        android:layout_below="@+id/txtBuscarTurma"
+        android:layout_marginTop="38dp"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/ic_menu_search" />
+
+    <TextView
+        android:id="@+id/txtBuscarSessao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtBuscarTurma"
+        android:layout_alignRight="@+id/txtBuscarTurma"
+        android:layout_alignTop="@+id/imgBuscarSessao"
+        android:text="@string/consultar_sessao"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtBuscarTurma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgBuscaTurmaId"
+        android:layout_alignLeft="@+id/txtAddSessaoId"
+        android:layout_alignStart="@+id/txtAddSessaoId"
+        android:text="@string/buscarTurma"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtAddTurmaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgBuscaTurmaId"
+        android:layout_alignLeft="@+id/txtAddSessaoId"
+        android:layout_alignStart="@+id/txtAddSessaoId"
+        android:text="@string/addTurma"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/txtAddSessaoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgAddSessaoId"
+        android:layout_centerHorizontal="true"
+        android:text="@string/AddSessao"
+        android:textSize="18sp" />
 
 </RelativeLayout>

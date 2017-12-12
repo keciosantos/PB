@@ -1,6 +1,7 @@
 package pbl2.cursoandroid.com.pbl2.modelo;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by keciosantos on 11/12/17.
@@ -12,6 +13,7 @@ public class Aluno implements Serializable {
     private String ano;
     private int semestre;
     private Integer idTurma;
+
 
     public Integer getId() {
         return id;
